@@ -1,0 +1,77 @@
+.content > *{
+    margin: 10px 0;
+    font-size: 0.95rem;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    color: #373737;
+    line-height: 1.6rem;
+}
+.content > figure > img{
+    border-radius: 6px;
+    margin: auto;
+}
+.content > figure > figcaption{
+    font-size: 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    color:#27154d;
+}
+.title{
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+.date{
+    padding-top: 2px;
+    font-size:0.7rem;
+}
+.content p a{
+    border-bottom: 0.21em 2px solid #723aeb;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1), color 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    padding: 0 4px 2px 4px;
+    color:black;
+    background-color: transparent;
+    font-weight:bold;
+}
+.content p a:hover {
+    box-shadow: inset 0 -2.125em 0 #723aeb;
+    color: white;
+    cursor:pointer;
+}
+.content a :not(figcaption){
+    padding: 10px 20px;
+    color:white;
+    background-color: #242424;
+    border-radius: 3px;
+}
+
+.content li::before{
+    content: "‣";
+    margin-left: 5px;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    padding: 5px 0;
+}
+.content h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-left: 6px solid rgb(102, 0, 228);
+    border-radius: 4px;
+    padding: 10px;
+    background-color: aliceblue;
+    margin-top: 23px;
+}
+.content > h3{
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+.content > h4{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.content > h5{
+    font-size: 0.87rem;
+    font-weight: bold;
+}
+.content > h6{
+    font-size: 0.8rem;
+    font-weight: bold;
+}

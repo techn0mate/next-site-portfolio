@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Set width of scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set background color of scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set color of scrollbar thumb */
+  border-radius: 2px; /* Round the corners of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #757575; /* Set color of thumb on hover */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #dddddd;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  background-image: radial-gradient(#75737310 2px, transparent 2px);
+  background-size: 40px 40px;
+}
+.light{
+  background-color: #efefff;
+  transition: all 0.3s ease-in-out;
+}
+.dark{
+  background-color: rgb(18, 18, 18) !important;
+  color:white;
+  transition: all 0.3s linear;
+}
+img{
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ----------------------------------------------------- custom -------------------------------------------------------- */
+
+/* --------------------------------------- Home ---------------------------------------------------- */
+
+.floating-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.whirl-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.whirl-line path {
+  animation-name: whirl;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes whirl {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------------- call to cation section --------------------------------- */
+
+.cto{
+  width: 100%;
+  background: url('/typefinance-bg-blue.jpg');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  padding: 0 40px;
+}
+.cto .left{
+  width: 50%;
+  margin:auto;
+  text-align: left;
+}
+.cto .left h2{
+  font-size: 3.7rem;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.cto .left h4, .cto .left p{
+  font-size:1.6rem;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+}
+.cto .left p{
+  font-size: 1.25rem;
+  padding:50px 0;
+}
+.cto .right{
+  margin:auto;
+}
+
+@media screen and (max-width: 993px) {
+  .cto{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .cto .left h2{
+    font-size: 2.3rem;
+  }
+  .cto .left h4{
+    font-size:1rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .cto{
+    padding: 0 10px;
+  }
+  .cto .right .laptop{
+    display: flex;
+    width: 95%;
+    margin: auto;
+  }
+  .cto .left{
+    width: 80%;
+  }
+  .cto .left p{
+    font-size: 1rem;
+  }
+}
+
+/* ------------------------------- review count section -------------------------------------------------- */
+.count-section{
+  width: 100%;
+  background-color: black;
+  height: auto;
+  padding: 50px 0;
+  min-height: 200px;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+.single-count{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.count-section .single-count span{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.count-section .single-count span h4{
+  font-size: 3.5rem;
+}
+.count-section .single-count span p{
+  font-size: 1.2rem;
+  color:gray;
+}
+@media screen and (min-width: 860px) {
+  .count-section .single-count span:not(:last-child) {
+    margin-right: 2em;
+    padding-right: 2em;
+    position: relative;
+  }
+  .count-section .single-count span:not(:last-child)::before {
+    content: '';
+    border-right: 1px solid rgb(60, 60, 60);
+    height: 70%;
+    transform: translateX(70px);
+    position: absolute;
+    top: 25%;
+    right: 0;
+  }
+  
+}
+@media screen and (max-width: 860px) {
+  .single-count{
+    flex-direction: column;
+  }
+  .count-section .single-count span h4{
+    font-size: 3rem;
+  }
+}

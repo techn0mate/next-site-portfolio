@@ -1,0 +1,92 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  background-color: #333;
+  background-image: url("/navbar-bg.jpg");
+  background-size: cover;
+  color: #fff;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Logo */
+/* .navbar__logo {
+  
+} */
+
+/* Navigation links */
+.navbar__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar__links li {
+  margin: 0 10px;
+}
+
+.navbar__links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hamburger icon */
+.navbar__menu_icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1;
+    padding-bottom: 10px;
+    border-radius: 0 0 9px 9px;
+  }
+  /* .navbar__links::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url('https://img.freepik.com/free-photo/colorful-abstract-nebula-space-background_53876-111356.jpg?w=1380&t=st=1678821449~exp=1678822049~hmac=97974cfad8f54eb37fc65629176b55dee8c6c2626d7f1d9451e1c724958eafa0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50% ;
+  } */
+
+  .navbar__links.show-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__links li {
+    margin: 10px 0;
+  }
+
+  .navbar__menu_icon {
+    display: block;
+  }
+  .ham-menu{
+    user-select: none;
+    -webkit-user-select: none;
+    outline: none;
+  }
+}
