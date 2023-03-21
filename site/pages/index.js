@@ -51,7 +51,7 @@ export default function Home() {
           <h1 className="font-extrabold text-2xl md:text-5xl text-right">Full Stack <span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-indigo-700'>Developer</span></h1>
           <p className="font-semibold text-sm md:text-lg pt-2 text-right md:text-right hover:-translate-x-1 transition-all duration-500">Passionate about building excellent software.</p>
           <span className="btn">
-            <Link href="/about" className="mt-3 inline-block border-2 border-indigo-600 hover:bg-indigo-500 drop-shadow-xl rounded-md px-4 py-2 font-bold hover:translate-y-1 hover:-translate-x-1 transition-all duration-500 select-none"><button>About me</button></Link>
+            <Link href="/about" className="mt-3 inline-block border-2 border-indigo-600 hover:text-indigo-600 drop-shadow-xl rounded-md px-4 py-2 font-bold hover:translate-y-1 hover:-translate-x-1 transition-all duration-500 select-none"><button>About me</button></Link>
             <Link href="/portfolio" className="mt-3 ml-3 inline-block border-2 border-indigo-600 bg-indigo-500 text-white drop-shadow-xl rounded-md px-4 py-2 font-bold hover:translate-y-1 hover:-translate-x-1 transition-all duration-500 select-none"><button>Portfolio</button></Link>
           </span>
           </span>
@@ -73,26 +73,7 @@ export default function Home() {
         <img className='laptop' src='/macbook.png'/>
         </span>
       </section>
-      <section className='count-section'>
-        <div className="single-count font-bold text-zinc-300">
-          <span>
-            <h4>10+</h4>
-            <p>Tools</p>
-          </span>
-          <span>
-            <h4>200+</h4> 
-            <p>Users</p>
-          </span>
-          <span>
-            <h4>10</h4>
-            <p>Free Trials</p>
-          </span>
-          <span>
-            <h4>97%</h4>
-            <p>Accuracy</p>
-          </span>
-        </div>
-      </section>
+      
       
     </>
   )

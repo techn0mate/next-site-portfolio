@@ -43,6 +43,9 @@ const Navbar = ({ theme, setTheme }) => {
             <Link href="/contact">Contact</Link>
             </li>
             <li className='select-none hover:font-bold transition-all duration-50'>
+            <Link href="/portfolio">Portfolio</Link>
+            </li>
+            <li className='select-none hover:font-bold transition-all duration-50'>
             <Link href="/blog">Blogs</Link>
             </li>
         </ul>
