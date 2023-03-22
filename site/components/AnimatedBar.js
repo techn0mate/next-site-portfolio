@@ -6,7 +6,7 @@ function AnimatedBar({ label, width }) {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setBarWidth(width);
-    }, 1000);
+    }, 300);
 
     return () => {
       clearTimeout(timeoutId);

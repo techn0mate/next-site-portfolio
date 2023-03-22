@@ -56,13 +56,14 @@ export default function Home() {
           </span>
           </span>
           <span className="right md:w-2/4">
-          <img className="border border-zinc-800 md:m-2 md:ml-10 m-auto mb-2 w-4/5 max-w-lg hover:filter saturate-150 hover:saturate-200 hover:translate-x-1 transition-all duration-500 rounded-xl cursor-pointer" src="/workstation.jpg" alt="Soumya Mondal" />
+            <img className="border border-zinc-800 md:m-2 md:ml-10 m-auto mb-2 w-4/5 max-w-lg hover:filter saturate-150 hover:saturate-200 hover:translate-x-1 transition-all duration-500 rounded-xl cursor-pointer" src="/workstation.jpg" alt="Soumya Mondal" />
           <IconList/>
           </span>
         </div>
-        
+        <img className="absolute translate-x-1/2 right-10 top-10 w-40 opacity-20" src="/svg/ornament.svg"/>
+        <img className="absolute -translate-x-1/2 left-10 bottom-20 w-40 -z-10 opacity-20" src="/svg/ornament.svg"/>
       </section>
-      <section className="cto h-screen text-white">
+      <section className="cto h-screen text-white relative">
         <span className="left">
           <h2>Stand out.</h2>
           <h4>Use the Asseteer tool to calculate your Unique Type</h4>
