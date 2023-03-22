@@ -22,14 +22,14 @@ const Navbar = ({ theme, setTheme }) => {
     return (
         <nav className={styles.navbar}>
         <div className={styles.navbar__logo}>
-            <Link href="/">
+            <Link className='' href="/">
                 <span className="text-white font-bold flex flex-row items-center text-xl">
                 <img src='/icon.png' alt='soumya mondal logo' width="40px"/>
                 <p className='pl-4'>Soumya</p>
                 </span>
             </Link>
         </div>
-        <button onClick={toggleTheme}>
+        <button className={styles.toggle + ' select-none'} onClick={toggleTheme}>
             {theme === 'light' ? '🌑' : '🌙'}
         </button>
         <ul className={`${styles.navbar__links} ${showMenu ? styles['show-menu'] : ''}`}>
