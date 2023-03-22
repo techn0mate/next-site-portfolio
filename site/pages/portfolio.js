@@ -19,6 +19,12 @@ const projects = [
 const Portfolio = () => {
   return (
     <>
+    <MyHead
+        title="Portfolio"
+        description="Welcome to my Portfolio"
+        image="https://soumyamondal.com/icon.png"
+        url="https://soumyamondal.com/portfolio"
+        />
     <section className="relative">
     <h1 className='text-center text-5xl py-5 font-extrabold'>My <span className='text-indigo-500'>Portfolio</span></h1>
     <div className='flex flex-row flex-wrap justify-center max-w-7xl m-auto'>
