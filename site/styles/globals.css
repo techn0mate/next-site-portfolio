@@ -121,6 +121,38 @@ img{
 h1{
   font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.moving-svg {
+  animation: move-left-right 2s ease-in-out infinite;
+}
+
+@keyframes move-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.up-moving-svg{
+  animation: move-up-down 2s ease-in-out infinite;
+}
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 /* ---------------- call to cation section --------------------------------- */
 
 .cto{
@@ -128,49 +160,6 @@ h1{
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
-
-}
-.cto .left{
-  width: 50%;
-  margin:auto;
-  text-align: left;
-}
-.cto .left h2{
-  font-size: 3.7rem;
-  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-}
-
-.cto .right{
-  margin:auto;
-}
-
-@media screen and (max-width: 993px) {
-
-  .cto .left h2{
-    font-size: 2.3rem;
-  }
-  .cto .left h4{
-    font-size:1rem;
-  }
-  
-}
-
-@media screen and (max-width: 600px) {
-  .cto{
-    padding: 0 10px;
-  }
-  .cto .right .laptop{
-    display: flex;
-    width: 95%;
-    margin: auto;
-  }
-  .cto .left{
-    width: 80%;
-  }
-  .cto .left p{
-    font-size: 1rem;
-  }
 }
 
 /* ------------------------------- review count section -------------------------------------------------- */
