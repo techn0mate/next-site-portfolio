@@ -49,7 +49,7 @@ export default function Home() {
         <div className="hero flex flex-col-reverse w-full md:flex-row">
           <span className="left flex flex-col items-end justify-center w-11/12 md:w-2/4">
           <h1 className="font-extrabold text-2xl md:text-5xl text-right">Full Stack <span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-indigo-700'>Developer</span></h1>
-          <p className="font-semibold text-sm md:text-lg pt-2 text-right md:text-right hover:-translate-x-1 transition-all duration-500">Passionate about building excellent software.</p>
+          <p className="font-semibold text-xs md:text-lg pt-2 text-right md:text-right hover:-translate-x-1 transition-all duration-500">Passionate about building excellent software.</p>
           <span className="btn">
             <Link href="/about" className="mt-3 inline-block border-2 border-indigo-600 hover:text-indigo-600 drop-shadow-xl rounded-md px-4 py-2 font-bold hover:translate-y-1 hover:-translate-x-1 transition-all duration-500 select-none"><button>About me</button></Link>
             <Link href="/portfolio" className="mt-3 ml-3 inline-block border-2 border-indigo-600 bg-indigo-500 text-white drop-shadow-xl rounded-md px-4 py-2 font-bold hover:translate-y-1 hover:-translate-x-1 transition-all duration-500 select-none"><button>Portfolio</button></Link>

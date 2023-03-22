@@ -7,6 +7,7 @@ import NProgress from 'nprogress';
 import '../public/nprogress.css';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import LinkTreeBtn from "@/components/LinkTreeBtn";
 
 export default function App({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(false);
@@ -56,6 +57,7 @@ export default function App({ Component, pageProps }) {
     <Navbar theme={theme} setTheme={setTheme}/>
     <Component {...pageProps} />
     <ToastContainer />
+    <LinkTreeBtn/>
     {isLoading && <div className="nprogress-custom-parent"><div className="nprogress-custom-bar"/></div>}
     <Footer/>
 

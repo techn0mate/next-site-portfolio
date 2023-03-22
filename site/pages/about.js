@@ -12,10 +12,10 @@ const About = () => {
         image="https://soumyamondal.com/typefinance-dp.jpg"
         url="https://soumyamondal.com"
         />
-      <section>
+      <section className="px-3">
         <h1 className="font-extrabold text-5xl text-center pt-7">About <span className="colored text-indigo-500">Me</span></h1>
         <div className="about w-full md:w-4/5 m-auto">
-          <h2 className="text-2xl font-bold mb-4 text-center">Experience & Education</h2>
+          <h2 className="text-lg md:text-2xl font-bold mb-4 text-center">Experience & Education</h2>
           <span className="education">
           <div className="flex flex-wrap">
             <div className="lg:w-1/2 pr-4 pl-4 m-15 px-4">
@@ -71,7 +71,7 @@ const About = () => {
         </div>
         <div className="w-full md:w-11/12 my-12 m-auto h-auto px-6 rounded-3xl flex items-center">
           <div>
-            <h2 className="text-2xl font-bold mb-4 text-center">Skill set</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">Skill set</h2>
             <div className="progress w-full md:w-1/2 m-auto flex flex-col md:flex-row">
             <div className="left flex flex-col md:flex-row gap-8 w-full md:w-1/2">
               <div className="flex flex-col w-full md:w-11/12 m-auto">
