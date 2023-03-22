@@ -1,13 +1,19 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react';
 import styles from '../styles/Navbar.module.css';
 
 const Navbar = ({ theme, setTheme }) => {
+    const router = useRouter()
     const [showMenu, setShowMenu] = useState(false);
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
     };
+
+    useEffect(()=>{
+        setShowMenu(false);
+    }, [router.asPath])
 
     const toggleTheme = () => {
         if (theme === 'light') {
