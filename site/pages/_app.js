@@ -41,6 +41,7 @@ export default function App({ Component, pageProps }) {
     const themeLocal = localStorage.getItem('theme');
     setTheme(themeLocal);
   }, [])
+  
   useEffect(() => {
     const html = document.querySelector('html')
     if (theme === 'light') {

@@ -11,6 +11,9 @@
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   z-index:-1;
 }
+.navbar *{
+  -webkit-tap-highlight-color: transparent;
+}
 .navbar::before{
   content: '';
   position: absolute;

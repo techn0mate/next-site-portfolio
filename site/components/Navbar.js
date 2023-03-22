@@ -17,7 +17,18 @@ const Navbar = ({ theme, setTheme }) => {
             setTheme('light');
             localStorage.setItem('theme', 'light');
         }
-      };
+    };
+
+    const On = ()=>{
+        return(
+            <svg fill="white" className='w-7 select-none' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8.5a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 16 8.5Zm0 5a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5ZM16 5H8a7 7 0 0 0 0 14h8a7 7 0 0 0 0-14Zm0 12H8A5 5 0 0 1 8 7h8a5 5 0 0 1 0 10Z"/></svg>
+        )
+    }
+    const Off =()=>{
+        return(
+            <svg fill="white" className='w-7 select-none' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 8.5a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 8 8.5Zm0 5A1.5 1.5 0 1 1 9.5 12 1.5 1.5 0 0 1 8 13.5ZM16 5H8a7 7 0 0 0 0 14h8a7 7 0 0 0 0-14Zm0 12H8A5 5 0 0 1 8 7h8a5 5 0 0 1 0 10Z"/></svg>
+        )
+    }
 
     return (
         <nav className={styles.navbar}>
@@ -30,7 +41,7 @@ const Navbar = ({ theme, setTheme }) => {
             </Link>
         </div>
         <button className={styles.toggle + ' select-none'} onClick={toggleTheme}>
-            {theme === 'light' ? '🌑' : '🌙'}
+            {theme === 'light' ? <Off/> : <On/>}
         </button>
         <ul className={`${styles.navbar__links} ${showMenu ? styles['show-menu'] : ''}`}>
             <li className='select-none hover:font-semibold transition-all duration-50'>

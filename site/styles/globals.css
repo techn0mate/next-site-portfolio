@@ -54,7 +54,10 @@ th {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
+/* tap color gone, select color gone */
+html *{
+  -webkit-tap-highlight-color: transparent; 
+}
 html {
   margin: 0;
   padding: 0;
