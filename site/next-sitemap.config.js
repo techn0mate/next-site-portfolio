@@ -2,7 +2,7 @@ const getAllPosts = require('./lib/posts');
 
 const sitemapOptions = {
   // These are the options you want to specify
-  siteUrl: 'https://typefinance.com',
+  siteUrl: 'https://soumyamondal.com',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
@@ -20,9 +20,11 @@ const staticPaths = {
   '/': { page: '/' },
   '/blog': { page: '/blog' },
   '/about': { page: '/about' },
-  '/disclaimer': { page: '/disclaimer' },
   '/contact': { page: '/contact' },
-  '/asseteer': { page: '/asseteer' },
+  '/portfolio': { page: '/portfolio' },
+  '/link': { page: '/link' },
+  '/faq': { page: '/faq' },
+  '/newsletter': { page: '/newsletter' },
 }
 
 const generatePaths = async () => {

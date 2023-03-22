@@ -9,7 +9,7 @@ const Contact = () => {
     <MyHead
         title="Contact me"
         description="Contact soumya Mondal"
-        image="https://soumyamondal.com/typefinance-dp.jpg"
+        image="https://soumyamondal.com/soumya2.jpg"
         url="https://soumyamondal.com"
         />
     <div className='m-2'>

@@ -7,7 +7,7 @@ export default async function getSidebarPosts(){
         // If an error occurs during the fetch request, handle it gracefully.
         // In this case, we'll just return a backup JSON object.
         console.error(error);
-        const backupData = await fetch('https://typefinance.com/backup.json').then((res) => res.json());
+        const backupData = await fetch('https://soumyamondal.com/backup.json').then((res) => res.json());
         return backupData
       }
 }

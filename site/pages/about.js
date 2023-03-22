@@ -9,7 +9,7 @@ const About = () => {
       <MyHead
         title="About me"
         description="About section - Soumya Mondal"
-        image="https://soumyamondal.com/typefinance-dp.jpg"
+        image="https://soumyamondal.com/soumya2.jpg"
         url="https://soumyamondal.com"
         />
       <section className="px-3">

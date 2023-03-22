@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   // const themeLocal = localStorage.getItem('theme');
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     const themeLocal = localStorage.getItem('theme');

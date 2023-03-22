@@ -30,7 +30,7 @@ export default function Home({res, allPosts}){
                             </div>
                         <div className="max-w-2xl m-auto bg-white p-6 rounded-xl text-gray-900">
                             <div title="Author" className="author flex flex-row py-4">
-                                <img className="w-6 rounded-full" src="/typefinance-dp.jpg" alt="post author"/>
+                                <img className="w-6 rounded-full" src="/soumya2.jpg" alt="post author"/>
                                 <h6 className="font-bold px-2">Soumya Mondal</h6>
                                 <svg className="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#00AEFF"><path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.5 12.5 11 15l4.5-4.5m-.595-5.512-.48-.659a3 3 0 0 0-4.85 0l-.48.659-.804-.127a3 3 0 0 0-3.43 3.43l.127.804-.659.48a3 3 0 0 0 0 4.85l.659.48-.127.804a3 3 0 0 0 3.43 3.43l.804-.127.48.659a3 3 0 0 0 4.85 0l.48-.659.804.127a3 3 0 0 0 3.43-3.43l-.127-.804.659-.48a3 3 0 0 0 0-4.85l-.659-.48.127-.804a3 3 0 0 0-3.43-3.43l-.804.127z"/></svg>
                                 <h6 className={styles.date + " text-sm text-gray-400"}>Updated: {res.postDate}</h6>
@@ -41,7 +41,7 @@ export default function Home({res, allPosts}){
                         </div>                        
                     </div>
                     <div className="sidebar h-auto w-80 max-w-80 h-4/5 bg-white rounded-xl m-auto my-10">
-                        <img className="w-11/12 m-auto rounded-2xl my-3" src="/typefinance.gif"/>
+                        <img className="w-11/12 m-auto rounded-2xl my-3" src="/soumya2.jpg"/>
                         <h5 className="text-gray-800 font-bold text-center font-mono text-xl pb-5">Related posts:</h5>
                         {allPosts.map((post, index)=>{
                             return (

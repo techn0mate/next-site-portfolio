@@ -5,8 +5,8 @@ export default function Custom404() {
     return(
         <>
         <Head>
-            <title>404 Page not found - TypeFinance</title>
-            <meta name="TypeFinance" content="Content not found typeFinance" />
+            <title>404 Page not found - Soumyamondal</title>
+            <meta name="404" content="Content not found on soumyamondal.com" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon.png" />
         </Head>
