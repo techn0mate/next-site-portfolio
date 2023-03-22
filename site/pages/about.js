@@ -10,7 +10,7 @@ const About = () => {
         title="About me"
         description="About section - Soumya Mondal"
         image="https://soumyamondal.com/soumya2.jpg"
-        url="https://soumyamondal.com"
+        url="https://soumyamondal.com/about"
         />
       <section className="px-3">
         <h1 className="font-extrabold text-5xl text-center pt-7">About <span className="colored text-indigo-500">Me</span></h1>

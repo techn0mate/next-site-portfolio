@@ -10,7 +10,7 @@ const Blogs = ({ data }) => {
       <MyHead
         title="Blog"
         description="Blog by Soumya Mondal"
-        image="https://soumyamondal.com/icon.png"
+        image="https://soumyamondal.com/soumya2.jpg"
         url="https://soumyamondal.com/blog"
         />
       <div>

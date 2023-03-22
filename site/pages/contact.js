@@ -10,7 +10,7 @@ const Contact = () => {
         title="Contact me"
         description="Contact soumya Mondal"
         image="https://soumyamondal.com/soumya2.jpg"
-        url="https://soumyamondal.com"
+        url="https://soumyamondal.com/contact"
         />
     <div className='m-2'>
       <div className="h-auto min-h-screen flex flex-col justify-center items-center">

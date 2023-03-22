@@ -40,8 +40,8 @@ export default function Home({res, allPosts}){
                             <span className={styles.content + " blog-content py-10 text-sm rounded-xl space-y pb-10"} dangerouslySetInnerHTML={{__html:res.content}}></span>
                         </div>                        
                     </div>
-                    <div className="sidebar h-auto w-80 max-w-80 h-4/5 bg-white rounded-xl m-auto my-10">
-                        <img className="w-11/12 m-auto rounded-2xl my-3" src="/soumya2.jpg"/>
+                    <div className="sidebar h-auto w-80 max-w-80 bg-white rounded-xl m-auto my-10">
+                        <Link className="w-11/12 text-center m-3 inline-block border-2 border-indigo-600 bg-indigo-500 text-white drop-shadow-xl rounded-md px-4 py-2 font-bold hover:translate-y-1 hover:-translate-x-1 transition-all duration-500 select-none" href="/portfolio">Check Portfolio</Link>
                         <h5 className="text-gray-800 font-bold text-center font-mono text-xl pb-5">Related posts:</h5>
                         {allPosts.map((post, index)=>{
                             return (

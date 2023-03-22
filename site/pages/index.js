@@ -42,7 +42,7 @@ export default function Home() {
       <MyHead
         title="Home"
         description="Welcome to SoumyaMondal.com"
-        image="https://soumyamondal.com/icon.png"
+        image="https://soumyamondal.com/soumya2.jpg"
         url="https://soumyamondal.com"
         />
       <section className="first-block h-screen flex justify-center items-center relative">

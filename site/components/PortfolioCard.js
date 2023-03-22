@@ -9,7 +9,7 @@ const PortfolioCard = ({title, url, image, desc, tags}) => {
             <div className="card bg-white w-72 md:w-96 min-w-80 border text-black border-zinc-200 shadow-lg rounded-xl p-3 m-4 hover:translate-y-1 transition-all duration-500">
                 <span className="el flex flex-col">
                     <img className='rounded-md' src={image} alt={title}/>
-                    <h2 className='text-2xl pt-2 font-bold capitalize px-2'>{title}</h2>
+                    <h2 className='text-2xl py-3 font-bold capitalize px-2'>{title}</h2>
                     <p className='pb-2 px-2'>{desc}</p>
                 </span>
                 <span className="detail flex flex-row flex-wrap mb-4">

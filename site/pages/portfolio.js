@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 
 const projects = [
-  {title: 'LMS Platform', url: ['https://github.com/lifeofsoumya', 'https://github.com/lifeofsoumya'], image: '/404.png', desc: 'A learning management system that helps teachers create and update courses, let students buy and enroll to courses and study from the uploaded videos and texts', tags: ['NodeJS', 'ReactJS', 'MongoDB', 'Keyhasher', 'Git']},
+  {title: 'LMS Platform', url: ['https://github.com/lifeofsoumya', 'https://github.com/lifeofsoumya'], image: '/projects/lms-project.jpg', desc: 'A learning management system that helps teachers create and update courses, let students buy and enroll to courses and study from the uploaded videos and texts', tags: ['NodeJS', 'ReactJS', 'MongoDB', 'Keyhasher', 'Git']},
   {title: 'TypeFinance', url: ['https://github.com/lifeofsoumya', 'https://typefinance.com'], image: '/projects/typefinance.jpg', desc: 'A Finance website with a Unique Tool (using custom algorithm), that determines portfolio segmentation', tags: ['NextJS', 'ReactJS', 'Tailwind', 'Keyhasher', 'vercel', 'REST']},
   {title: 'KeyHasher NPM Library', url: ['https://github.com/IndGeek/Keyhasher-npm', 'https://www.npmjs.com/package/keyhasher'], image: '/projects/project-8.png', desc: 'Encrypts data with multiple processes, Uses password numbers to Encrypt and Decrypt, does sha256 Hashing', tags: ['NodeJS', 'Git']},
   {title: 'Anonymessage Chat', url: ['https://github.com/lifeofsoumya', 'https://github.com/lifeofsoumya'], image: '/projects/project-1.jpg', desc: 'A Chat app made with Socket.io, HTML, CSS, JavaScript', tags: ['HTML', 'CSS', 'JS']},
@@ -22,7 +22,7 @@ const Portfolio = () => {
     <MyHead
         title="Portfolio"
         description="Welcome to my Portfolio"
-        image="https://soumyamondal.com/icon.png"
+        image="https://soumyamondal.com/soumya2.jpg"
         url="https://soumyamondal.com/portfolio"
         />
     <section className="relative">

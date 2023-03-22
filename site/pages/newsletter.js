@@ -1,5 +1,6 @@
 import React from 'react'
 import { toast } from 'react-toastify';
+import MyHead from "../components/MyHead";
 
 const newsletter = () => {
     const handleSubmit =(e) =>{
@@ -7,6 +8,13 @@ const newsletter = () => {
         toast.success("You're enrolled successfully")
     }
   return (
+    <>
+    <MyHead
+        title="About me"
+        description="About section - Soumya Mondal"
+        image="https://soumyamondal.com/soumya2.jpg"
+        url="https://soumyamondal.com"
+        />
     <section className='h-auto min-h-screen relative flex flex-col gap-5 justify-center items-center'>
         <h1 className="font-extrabold text-2xl md:text-4xl text-center">Enroll to <span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-indigo-700'>Newsletter</span></h1>
         <div className="">
@@ -22,6 +30,7 @@ const newsletter = () => {
         <img className="moving-svg absolute -translate-x-1/2 left-10 top-20 w-40 -z-10 opacity-5 md:opacity-10" src="/svg/zigzag.svg"/>
         <img className="up-moving-svg hidden md:block absolute -translate-x-1/2 right-10 bottom-20 w-40 -z-10 opacity-10 md:opacity-20" src="/svg/dots.svg"/>
     </section >
+    </>
   )
 }
 
