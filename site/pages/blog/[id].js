@@ -57,7 +57,7 @@ export default function Home({res, allPosts}){
                             </Link>
                             );
                         })}
-                        <Link href="/blog"><button className="px-7 py-3 w-full rounded-lg border-4 border-white bg-zinc-800">Read more</button></Link>
+                        <Link href="/blog"><button className="px-7 py-3 w-11/12 mx-2 rounded-lg border-4 border-white text-white bg-indigo-600">Read more</button></Link>
                     </div>
                     </div>
         </div>

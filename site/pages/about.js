@@ -66,7 +66,7 @@ const About = () => {
             </div>
         </div>
         <Link href="/resume" className="mt-3 ml-3 inline-block border-2 border-indigo-600 bg-indigo-500 text-white drop-shadow-xl rounded-md px-4 py-2 font-bold hover:translate-y-1 hover:translate-x-1 transition-all duration-500 select-none"><span className="flex flex-row"><button>My Resume</button><img className="w-6 ml-3" src="/svg/gdrive.svg"/></span></Link>
-        <Link href="https://github.com/lifeofsoumya" className="mt-3 ml-3 inline-block border-2 border-indigo-600 bg-indigo-500 text-white drop-shadow-xl rounded-md px-4 py-2 font-bold hover:translate-y-1 hover:translate-x-1 transition-all duration-500 select-none"><span className="flex flex-row"><button>My Github</button><img className="w-6 ml-3" src="/svg/github.svg"/></span></Link>
+        <Link href="https://github.com/lifeofsoumya" className="mt-3 ml-3 inline-block border-2 border-indigo-600 bg-indigo-500 text-white drop-shadow-xl rounded-md px-4 py-2 font-bold hover:translate-y-1 hover:translate-x-1 transition-all duration-500 select-none"><span className="flex flex-row"><button>My Github</button><img className="w-6 ml-3" src="/svg/githubw.svg"/></span></Link>
 
 
           </span>
@@ -83,6 +83,7 @@ const About = () => {
                 <AnimatedBar label="NextJS" width="78%" />
                 <AnimatedBar label="JavaScript" width="87%" />
                 <AnimatedBar label="CSS" width="88%" />
+                <AnimatedBar label="Tailwind CSS" width="95%" />
               </div>
               </div>
             </div>
@@ -94,6 +95,7 @@ const About = () => {
                   <AnimatedBar label="C" width="78%" />
                   <AnimatedBar label="C++" width="87%" />
                   <AnimatedBar label="DevOps" width="28%" />
+                  <AnimatedBar label="REST / GraphQL" width="78%" />
                 </div>
               </div>
             </div>

@@ -5,14 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 
 const projects = [
-    {title: 'Email Marketing course', url: 'https://bit.ly/beginnersemailcourse', image: '/svg/browser.svg'},
-    {title: 'Coding Tutorials', url: 'https://www.youtube.com/@indgeek', image: '/svg/code.svg'},
+    {title: 'Email Marketing course', url: 'https://bit.ly/beginnersemailcourse', image: '/svg/email.svg'},
+    {title: 'Coding Tutorials', url: 'https://www.youtube.com/@indgeek', image: '/svg/code2.svg'},
     {title: 'Coding Blog', url: 'https://indgeek.com', image: '/svg/indgeek.svg'},
     {title: 'How to start a Blog', url: 'https://turbohosty.com/blog/how-to-start-a-money-making-blog-in-2023/', image: '/svg/browser.svg'},
     {title: 'My Github', url: 'https://github.com/lifeofsoumya', image: '/svg/github.svg'},
-    {title: 'LMS Platform 2', url: '/', image: '/svg/code.svg'},
-    {title: 'LMS Platform', url: '/', image: '/svg/browser.svg'},
-    {title: 'LMS Platform 2', url: '/', image: '/svg/code.svg'},
+    {title: 'TypeFinance', url: 'https://typefinance.com', image: 'https://typefinance.com/favicon.png'},
 ]
 
 const Portfolio = () => {

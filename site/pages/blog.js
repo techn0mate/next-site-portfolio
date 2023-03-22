@@ -1,23 +1,21 @@
-import React, {useState, useEffect} from "react";
-import Head from "next/head";
+import React from "react";
 import Link from 'next/link'
 import getAllPosts from "../lib/posts";
+import MyHead from "../components/MyHead";
 
 const Blogs = ({ data }) => {
     console.log(`${process.env.BACKEND_URL}/wp/v2/posts?_embed`);
   return (
     <>
-      <Head>
-        <title>Blogs - TypeFinance</title>
-        <meta name="TypeFinance" content="Blogs typeFinance" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+      <MyHead
+        title="Blog"
+        description="Blog by Soumya Mondal"
+        image="https://soumyamondal.com/icon.png"
+        url="https://soumyamondal.com/blog"
+        />
       <div>
         <section className="blog-section">
-          <h3>
-            Blogs by <span className="head-knowledge-base">TypeFinance</span>
-          </h3>
+          <h1 className='text-center text-5xl py-5 md:py-16 font-extrabold'>My <span className='text-indigo-500'>Blog</span></h1>
           <div className="gap-5 w-4/5 m-auto flex flex-col lg:flex-row flex-wrap justify-evenly">
             {data.map((post, index) => {
               return (
@@ -40,18 +38,6 @@ const Blogs = ({ data }) => {
 };
 
 export default Blogs;
-
-// export async function getServerSideProps() {
-//   const getProps = await fetch(
-//     `${process.env.BACKEND_URL}/wp/v2/posts?_embed`
-//   );
-//   const data = await getProps.json();
-//   if(data) return { props: { data } };
-//   else{
-//     const res ='/backup.json'.json()
-//     return { props: { res } } ;
-//   }
-// } 
 
 export async function getServerSideProps() {
   const res = await getAllPosts();

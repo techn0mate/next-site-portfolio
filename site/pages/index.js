@@ -63,15 +63,14 @@ export default function Home() {
         <img className="absolute translate-x-1/2 right-10 top-10 w-40 opacity-20" src="/svg/ornament.svg"/>
         <img className="absolute -translate-x-1/2 left-10 bottom-20 w-40 -z-10 opacity-20" src="/svg/ornament.svg"/>
       </section>
-      <section className="cto h-screen text-white relative">
-        <span className="left">
-          <h2>Stand out.</h2>
-          <h4>Use the Asseteer tool to calculate your Unique Type</h4>
-          <p>Investment style matters. You don't earn same, neither have same goal or target amount. So find out how to <span className="highlight">diversify portfolio</span> based on your goals.</p>
-          <a href="https://youtu.be/Da3wQSM79Rc" target="_blank" className='custom-btn border-2 border-white rounded-md px-6 py-3 hover:bg-white hover:text-zinc-800 transition-all duration-300'><button >Watch Demo <svg xmlns="http://www.w3.org/2000/svg"  className="w-7 h-7" viewBox="0 0 24 24" fill="red" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.75-3.27-5.75-3.27v6.54z"/></svg></button></a>
+      <section className="cto w-full flex flex-col-reverse md:flex-row justify-center items-center h-auto min-h-screen text-white relative">
+        <span className="left md:w-1/2 m-auto text-left">
+          <h2>Expertise.</h2>
+          <p className="">I'm a Full stack developer with a passion for building top-notch websites. I've a solid understanding of both Frontend and Backend development and I can't wait to utilize my skills in the workplace. I'm a quick learner and am certain that I can be a valueable asset to any web development team.</p>
+          <Link href="/faq" target="_blank" className='custom-btn inline-block border-2 border-white rounded-md my-4 px-6 py-3 hover:bg-white hover:text-zinc-800 transition-all duration-300'><button>About me<svg xmlns="http://www.w3.org/2000/svg"  className="w-7 h-7 absolute" viewBox="0 0 24 24" fill="red" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.75-3.27-5.75-3.27v6.54z"/></svg></button></Link>
         </span>
-        <span className="right">
-        <img className='laptop' src='/macbook.png'/>
+        <span className="right m-auto">
+        <img className='me w-80' src='/soumya.png'/>
         </span>
       </section>
       
