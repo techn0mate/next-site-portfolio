@@ -1,61 +1,26 @@
-import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
-import Link from 'next/link';
-import styles from '../../styles/post.module.css';
-import MyHead from '../../components/MyHead';
+import Link from 'next/link'
+import { GraphQLClient, gql } from 'graphql-request';
+import styles from "../../styles/post.module.css";
+import MyHead from "../../components/MyHead";
 
-const apolloClient = new ApolloClient({
-  uri: 'https://ap-south-1.cdn.hygraph.com/content/clfl2qhu008f801uh5knw6eld/master',
-  cache: new InMemoryCache(),
-});
+const graphCms = new GraphQLClient('https://ap-south-1.cdn.hygraph.com/content/clfl2qhu008f801uh5knw6eld/master');
 
 export async function getStaticPaths() {
-  const { data } = await apolloClient.query({
-    query: gql`
-      query GetPostSlugs {
-        postsConnection {
-          edges {
-            node {
-              slug
-            }
-          }
-        }
-      }
-    `,
-  });
-
-  return {
-    paths: data.postsConnection.edges.map(({ node: { slug } }) => ({ params: { slug } })),
-    fallback: true,
-  };
+    const posts = await getPosts();
+    return {
+        paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
+        fallback: true,
+    };
 }
-
 export async function getStaticProps({ params }) {
-  const { data } = await apolloClient.query({
-    query: gql`
-      query GetPostDetails($slug: String!) {
-        post(where: { slug: $slug }) {
-          title
-          slug
-          excerpt
-          updatedAt
-          coverImage {
-            url
-          }
-          content {
-            html
-          }
-        }
-      }
-    `,
-    variables: { slug: params.slug },
-  });
+    const data = await getPostDetails(params.slug);
+    return {
+        props: {
+            post: data,
+        },
+        };
+    }
 
-  return {
-    props: {
-      post: data.post,
-    },
-  };
-}
 export default function Home({post}){
 
     return(
@@ -97,3 +62,47 @@ export default function Home({post}){
         </>
     )
 }
+
+export const getPostDetails = async (slug) => {
+    const query = gql`
+    query GetPostDetails($slug : String!) {
+        post(where: {slug: $slug}) {
+            title
+            slug
+            excerpt
+            updatedAt
+            coverImage {
+                url
+            }
+            content {
+                html
+            }
+        }
+    }
+    `;
+
+    const result = await graphCms.request(query, { slug });
+    return result.post;
+};
+
+
+
+export const getPosts = async () => {
+    const query = gql`
+    query MyQuery {
+        postsConnection {
+        edges {
+            node {
+            createdAt
+            slug
+            title
+            excerpt
+            }
+        }
+        }
+    }
+    `;
+
+    const result = await graphCms.request(query);
+    return result.postsConnection.edges;
+};
