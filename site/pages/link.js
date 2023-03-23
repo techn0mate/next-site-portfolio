@@ -19,7 +19,7 @@ const Portfolio = () => {
         <MyHead
         title="LinkTree"
         description="My Link Tree"
-        image="https://soumyamondal.com/icon.png"
+        image="https://soumyamondal.com/soumya2.jpg"
         url="https://soumyamondal.com/link"
         />
         <section className="relative">

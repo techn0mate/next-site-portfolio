@@ -8,7 +8,7 @@ function faq() {
         <MyHead
         title="My FAQs"
         description="Facts and Questions about me"
-        image="https://soumyamondal.com/icon.png"
+        image="https://soumyamondal.com/soumya2.jpg"
         url="https://soumyamondal.com/faq"
         />
         <section className="relative h-auto min-h-screen">
