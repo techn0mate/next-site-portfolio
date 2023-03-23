@@ -15,6 +15,10 @@
     text-decoration: none;
     color:#27154d;
 }
+.content li {
+    display: flex;
+    align-items: center;
+}
 .title{
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }

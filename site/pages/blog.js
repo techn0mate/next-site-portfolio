@@ -1,10 +1,34 @@
-import React from "react";
-import Link from 'next/link'
-import getAllPosts from "../lib/posts";
 import MyHead from "../components/MyHead";
+import { useState, useEffect } from 'react';
+import { GraphQLClient } from 'graphql-request';
+import Link from 'next/link';
 
-const Blogs = ({ data }) => {
-    console.log(`${process.env.BACKEND_URL}/wp/v2/posts?_embed`);
+const graphCms = new GraphQLClient('https://ap-south-1.cdn.hygraph.com/content/clfl2qhu008f801uh5knw6eld/master');
+
+const Blogs = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const { posts } = await graphCms.request(`
+        {
+          posts {
+            id
+            title
+            slug
+            coverImage {
+              url
+            }
+          }
+        }
+      `);
+
+      setPosts(posts);
+    };
+
+    fetchPosts();
+  }, []);
+
   return (
     <>
       <MyHead
@@ -17,15 +41,15 @@ const Blogs = ({ data }) => {
         <section className="blog-section">
           <h1 className='text-center text-5xl py-5 md:py-16 font-extrabold'>My <span className='text-indigo-500'>Blog</span></h1>
           <div className="gap-5 w-4/5 m-auto flex flex-col lg:flex-row flex-wrap justify-evenly">
-            {data.map((post, index) => {
+            {posts.map((post) => {
               return (
-                <Link key={index} href={`/blog/${post['slug']}`}>
+                <Link key={post.id} href={`/blog/${post.slug}`}>
                   <div className="cursor-pointer mb-10 bg-white p-1 flex-wrap rounded-2xl text-black w-full sm:w-5/6 md:w-5/6 lg:w-5/6">
                   <img
                     className="mb-5 rounded-2xl w-full h-auto max-h-60 object-cover"
-                    src={ 'wp:featuredmedia' in post._embedded && post._embedded['wp:featuredmedia'].length > 0 ? post._embedded['wp:featuredmedia'][0].source_url : 'fallback-image-url'}
+                    src={post.coverImage.url}
                   />
-                    <h4 className="font-medium mb-1 text-md pl-2">{post['title']['rendered']}</h4>
+                    <h4 className="font-medium mb-1 text-md pl-2">{post.title}</h4>
                   </div>
                 </Link>
               );
@@ -38,8 +62,3 @@ const Blogs = ({ data }) => {
 };
 
 export default Blogs;
-
-export async function getServerSideProps() {
-  const res = await getAllPosts();
-  return {props: { data: res}};
-}
