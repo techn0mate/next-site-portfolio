@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.10",
     "@formspree/react": "^2.4.1",
     "chart.js": "^4.2.1",
     "eslint": "8.36.0",

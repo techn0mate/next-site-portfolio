@@ -1,29 +1,34 @@
 import MyHead from "../components/MyHead";
 import { useState, useEffect } from 'react';
-import { GraphQLClient } from 'graphql-request';
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import Link from 'next/link';
 
-const graphCms = new GraphQLClient('https://ap-south-1.cdn.hygraph.com/content/clfl2qhu008f801uh5knw6eld/master');
+const apolloClient = new ApolloClient({
+  uri: 'https://ap-south-1.cdn.hygraph.com/content/clfl2qhu008f801uh5knw6eld/master',
+  cache: new InMemoryCache(),
+});
 
 const Blogs = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const { posts } = await graphCms.request(`
-        {
-          posts {
-            id
-            title
-            slug
-            coverImage {
-              url
+      const { data } = await apolloClient.query({
+        query: gql`
+          {
+            posts {
+              id
+              title
+              slug
+              coverImage {
+                url
+              }
             }
           }
-        }
-      `);
+        `
+      });
 
-      setPosts(posts);
+      setPosts(data.posts);
     };
 
     fetchPosts();
