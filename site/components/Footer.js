@@ -56,7 +56,7 @@ const Footer = () => {
                 <li>
                   <Link href="https://www.linkedin.com/in/soumya-mondal/" rel="noreferrer" target="_blank" className=" transition hover:opacity-75">
                     <span className="sr-only">Linkedin</span>
-                    <svg fill="#fff" viewBox="0 0 24 24" className="w-6 h-6"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 2v16h16V4H4Zm7.452 5.452A3.023 3.023 0 0 1 13 9h1c1.394 0 3 1.147 3 3v4h-2v-4c0-.576-.594-1-1-1h-1c-.406 0-1 .424-1 1v4h-2V9h1l.452.452ZM8 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm1 8H7V9h2v7Z"/></svg>
+                    <svg fill="#fff" viewBox="0 0 24 24" className="w-6 h-6"  xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 2v16h16V4H4Zm7.452 5.452A3.023 3.023 0 0 1 13 9h1c1.394 0 3 1.147 3 3v4h-2v-4c0-.576-.594-1-1-1h-1c-.406 0-1 .424-1 1v4h-2V9h1l.452.452ZM8 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm1 8H7V9h2v7Z"/></svg>
                   </Link>
                 </li>
               </ul>
